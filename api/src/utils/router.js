@@ -2,12 +2,14 @@ const express = require('express');
 const router = express.Router();
 
 const UserController = require('../controllers/UserController');
+const LoginController = require('../controllers/LoginController');
 
 //Criar usuário
 router.post("/users", UserController.createUser);
 //Listar todos usuarios
 router.get("/users", UserController.listUsers);
 //Fazer login
+router.post("/login", LoginController.login);
 //Fazer logout
 //Ver todas as fotos
 //Likes em fotos

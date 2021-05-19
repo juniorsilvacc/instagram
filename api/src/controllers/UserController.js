@@ -5,6 +5,15 @@ module.exports = {
     const {username, password, name, description, url} = req.body;
 
     try {
+
+      const userAlreadyExists = await User.findOne({
+        username
+      });
+
+      if(userAlreadyExists){
+        return res.status(400).send({message: "User already exists. Try different one"})
+      }
+
       const createdUser = await User.create({
         username, 
         password, 
