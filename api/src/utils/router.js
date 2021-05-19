@@ -1,7 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
+const UserController = require('../controllers/UserController');
+
 //Criar usuário
+router.post("/users", UserController.createUser);
+//Listar todos usuarios
+router.get("/users", UserController.listUsers);
 //Fazer login
 //Fazer logout
 //Ver todas as fotos
