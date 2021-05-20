@@ -8,6 +8,7 @@ const mongoConnection = process.env.MONGO_URI
 mongoose.connect(mongoConnection, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
+  useFindAndModify: false,
 }, () => console.log('Connected to database'));
 
 app.use(express.json());

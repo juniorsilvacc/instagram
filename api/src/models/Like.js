@@ -4,12 +4,12 @@ const Schema = new mongoose.Schema({
   picture:{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Post', 
-    require: true
+    require: true,
   },
   user:{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User', 
-    require: true
+    require: true,
   }
 });
 

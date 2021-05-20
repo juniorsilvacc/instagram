@@ -3,17 +3,21 @@ const router = express.Router();
 
 const UserController = require('../controllers/UserController');
 const LoginController = require('../controllers/LoginController');
+const PostController = require('../controllers/PostController');
 
-//Criar usuário
+
 router.post("/users", UserController.createUser);
-//Listar todos usuarios
 router.get("/users", UserController.listUsers);
-//Fazer login
+
 router.post("/login", LoginController.login);
+
+router.post("/posts", PostController.createPost);
+router.get("/posts", PostController.listAllPosts);
+router.delete("/posts/:post_id", PostController.deletePost);
+router.put("/posts/:post_id", PostController.editPost);
+
 //Fazer logout
-//Ver todas as fotos
 //Likes em fotos
-//Postar uma foto
 //Deletar uma foto
 //Editar descrição de foto
 //Visualizar perfil de usuário
