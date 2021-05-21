@@ -5,6 +5,7 @@ const UserController = require('../controllers/UserController');
 const LoginController = require('../controllers/LoginController');
 const PostController = require('../controllers/PostController');
 const ProfileController = require('../controllers/ProfileController');
+const LikeController = require('../controllers/LikeController');
 
 
 router.post("/users", UserController.createUser);
@@ -19,12 +20,7 @@ router.put("/posts/:post_id", PostController.editPost);
 
 router.get("/users/:user_id", ProfileController.listProfile);
 
-//Fazer logout
-//Likes em fotos
-//Deletar uma foto
-//Editar descrição de foto
-//Visualizar perfil de usuário
- 
-router.get("/", (req, res) => {return res.send("Hello")});
+router.post("/posts/:post_id/like", LikeController.likePost);
+router.post("/posts/:post_id/deslike", LikeController.deslikePost);
 
 module.exports = router;
