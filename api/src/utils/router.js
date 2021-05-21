@@ -4,6 +4,7 @@ const router = express.Router();
 const UserController = require('../controllers/UserController');
 const LoginController = require('../controllers/LoginController');
 const PostController = require('../controllers/PostController');
+const ProfileController = require('../controllers/ProfileController');
 
 
 router.post("/users", UserController.createUser);
@@ -15,6 +16,8 @@ router.post("/posts", PostController.createPost);
 router.get("/posts", PostController.listAllPosts);
 router.delete("/posts/:post_id", PostController.deletePost);
 router.put("/posts/:post_id", PostController.editPost);
+
+router.get("/users/:user_id", ProfileController.listProfile);
 
 //Fazer logout
 //Likes em fotos

@@ -9,6 +9,11 @@ const Schema = new mongoose.Schema({
     type: String,
     require: true
   },
+  likes: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    require: true
+  }],
   user:{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User', 
