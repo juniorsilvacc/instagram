@@ -2,7 +2,7 @@ const User = require('../models/User');
 
 module.exports = {
   async createUser(req, res){
-    const {username, password, name, description, url} = req.body;
+    const {username, password, name, description, avatar, url} = req.body;
 
     try {
 
@@ -19,6 +19,7 @@ module.exports = {
         password, 
         name, 
         description, 
+        avatar,
         url
       });
 
