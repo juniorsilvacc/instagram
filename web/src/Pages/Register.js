@@ -1,10 +1,12 @@
 import React from 'react'
+import HeaderNav from '../Components/HeaderNav'
 
 function Register() {
   return (
-    <div>
+    <>
+      <HeaderNav/>
       <h1>Register</h1>
-    </div>
+    </>
   )
 }
 
