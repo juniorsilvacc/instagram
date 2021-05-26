@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import BottomNav from '../Components/BottomNav'
-import HeaderNav from '../Components/HeaderNav'
+import HeaderNavOff from '../Components/HeaderNavOff'
 import MainSection from '../Components/MainSection'
 
 function Login() {
   return (
     <>
-     <HeaderNav/>
+     <HeaderNavOff/>
      <MainSection/>
      <BottomNav/>
     </>

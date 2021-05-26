@@ -1,10 +1,10 @@
 import React from 'react'
-import HeaderNav from '../Components/HeaderNav'
+import HeaderNavOff from '../Components/HeaderNavOff'
 
 function Register() {
   return (
     <>
-      <HeaderNav/>
+      <HeaderNavOff/>
       <h1>Register</h1>
     </>
   )

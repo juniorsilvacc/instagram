@@ -14,16 +14,16 @@ function Router() {
         <Route path='/' exact>
           <Login/>
         </Route>
-        <Route path='/register' exact>
+        <Route path='/register'>
           <Register/>
         </Route>
-        <Route path='/feed' exact>
+        <Route path='/feed'>
           <Feed/>
         </Route>
-        <Route path='/post' exact>
+        <Route path='/post'>
           <Post/>
         </Route>
-        <Route path='/profile' exact>
+        <Route path='/profile'>
           <Profile/>
         </Route>
       </Switch>

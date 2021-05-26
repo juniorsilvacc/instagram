@@ -1,12 +1,15 @@
 import React from "react";
+import {RiHome2Line} from 'react-icons/ri'
+import {AiOutlineCamera} from 'react-icons/ai'
+import {MdPermIdentity} from 'react-icons/md'
 
 function BottomNav() {
   return (
     <footer>
       <nav>
-        <img src="" alt="Feed" />
-        <img src="" alt="Postar foto" />
-        <img src="" alt="Ver seu perfil" />
+       <RiHome2Line className="icons" size={25}/>
+       <AiOutlineCamera className="icons" size={25}/>
+       <MdPermIdentity className="icons" size={25}/>
       </nav>
     </footer>
   );
