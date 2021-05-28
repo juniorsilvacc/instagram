@@ -1,4 +1,5 @@
 import React from 'react'
+import BottomNav from '../Components/BottomNav'
 import HeaderNav from '../Components/HeaderNav'
 
 function Post() {
@@ -6,6 +7,7 @@ function Post() {
     <>
       <HeaderNav/>
       <h1>Post</h1>
+      <BottomNav/>
     </>
   )
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import HeroImg from "../Assets/hero-img.png";
 import {Link} from 'react-router-dom';
+import InputStandart from "./InputStandart";
 
 function MainSection() {
   return (
@@ -13,10 +14,10 @@ function MainSection() {
             <h1>Entrar</h1>
             <fieldset>
               <div className="input-field">
-                <input id="user" type="text" placeholder="Usuário" />
+                <InputStandart type="text" title="Usuário" />
               </div>
               <div className="input-field">
-                <input id="password" type="password" placeholder="Senha" />
+                <InputStandart type="password" title="Senha" />
               </div>
             </fieldset>
             <button>Connectar</button>
