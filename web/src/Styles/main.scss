@@ -145,7 +145,10 @@ main{
         width: 80%;
         button{
           width: 100%;
-          background-color: #CCC;
+          background-color: #ccc;
+        }
+        .buttonFinish{
+          background-color: #0095f6 !important;
         }
       }
       
@@ -206,6 +209,18 @@ footer{
 
 .form-register{
   max-height: 350px !important;
+}
+
+.buttonRegister{
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  .linkRegister{
+    margin-left: .2em;
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+  }
 }
 
 

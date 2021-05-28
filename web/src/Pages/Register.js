@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderNavOff from '../Components/HeaderNavOff'
-import BottomNavOff from '../Components/BottomNavOff'
+import BottomNavRegister from '../Components/BottomNavRegister'
 import RegisterMainSection from '../Components/RegisterMainSection'
 
 function Register() {
@@ -8,7 +8,7 @@ function Register() {
     <>
       <HeaderNavOff/>
       <RegisterMainSection/>
-      <BottomNavOff/>
+      <BottomNavRegister/>
     </>
   )
 }
