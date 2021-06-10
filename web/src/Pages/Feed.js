@@ -1,12 +1,13 @@
 import React from 'react'
 import BottomNav from '../Components/BottomNav'
 import HeaderNav from '../Components/HeaderNav'
+import FeedContainer from '../Components/FeedContainer'
 
 function Feed() {
   return (
     <>
       <HeaderNav/>
-      <h1>Feed</h1>
+      <FeedContainer/>
       <BottomNav/>
     </>
   )

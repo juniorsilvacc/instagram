@@ -23,4 +23,8 @@ router.get("/users/:user_id", ProfileController.listProfile);
 router.post("/posts/:post_id/like", LikeController.likePost);
 router.post("/posts/:post_id/deslike", LikeController.deslikePost);
 
+router.get("/", (req, res) => {
+  return res.send({message: 'Hello'})
+})
+
 module.exports = router;

@@ -6,8 +6,10 @@ import api from '../Services/api'
 
 function RegisterMainSection() {
 
+  //Butão de finalizar
   const [show, setShow] = useState(1);
 
+  //Salvando os inputs em um estado
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -15,6 +17,7 @@ function RegisterMainSection() {
   const [avatar, setAvatar] = useState('');
   const [url, setUrl] = useState('');
 
+  //Carregando o registro
   const [loading, setLoading] = useState(false);
 
   function loadFirstPage(e) {
@@ -27,6 +30,7 @@ function RegisterMainSection() {
     setShow(2);
   }
 
+  //Função para cadastrar usuário
   async function registrationHandler(e){
     e.preventDefault();
     setLoading(true);
@@ -47,12 +51,13 @@ function RegisterMainSection() {
       alert('Usuário cadastrado com sucesso.');
       setLoading(false);
 
-        setUsername('');
-        setPassword('');
-        setName('');
-        setDescription('');
-        setAvatar('');
-        setUrl('');
+      //Limpar os campos depois do cadastro
+      setUsername('');
+      setPassword('');
+      setName('');
+      setDescription('');
+      setAvatar('');
+      setUrl('');
 
     } catch (err) {
       alert('Erro ao cadastrar usuário.');
